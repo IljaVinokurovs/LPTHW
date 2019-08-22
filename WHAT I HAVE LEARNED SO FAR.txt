@@ -1,0 +1,63 @@
+print(): Prints (shows on display) whatever is in the brackets, variables, strings, numbers, anything.
+ 
+print("") vs print('') : The standard option is to contain strings with single quotes, probably because it makes program run quicker over time,
+ but I find double quotes more useful in english language that use a lot of apostrophes
+
+#any code : this is how we write comments in the code
+
+print("string", 2+2/5*4-8) : you can make calculations straight inside the print function
+
+x = 9%4 = 1 : the % is not percentage of, but it is mod(), so it gives a remainder, in this case 1
+
+print(5>4) : Prints a boolean true or false
+
+float(), int() str() type() : these functions convert the value inside to the specific type of data.
+
+print("Sum = "+ sum + "$") vs print("Sum = ", sum, "$") the version with +'s needs a sum to be a string, the version with commas does not at will print literal values. 
+
+y= 2 vs y= "text" vs x = y*x : the two main type of variables, integer (numbers) or strings (text)
+
+y= 10, x = f"Y is {y}", print(f"Y is {y}") : You can combine strings and numbers with f"{}" argumanets. Its called f-strings
+
+\n or \\ or \" or \" : escape characters, in order - new line, backslash if you need one in text, double quotes if your string is surrounded with "", 
+single quotes if your string is surrounded with ''
+
+""" text """ superstring, everything inside this string will be printed litteraly, escape characters will still work  
+
+"{} text {}".format("text1", "text2") gives output text1 text text2 : this is called positional formating
+
+input(prompt?): is the way we ask input from the users
+
+from sys import argv; x, y, z = argv: this is called argument variable. This variable is defined while runnings the script in this example - python ex1.py yValue zValue
+first variable always have to be the script name.
+
+repr() used for debugging, show the official representation of the parameter inside the function
+
+print("Some text here", end = " "): end = " " means that in the end of the print function we specifically want a SPACE and not anyting else like RETURN. This means that next
+string from another print() statment will start on the same line after the specified characters in the end = ""
+
+open(filename): this will open file and returns it as file object (kind of keeps it in cash, not sure if 100% correct) when you open a file the default. 
+open(filename, "w") will open file with read and write properties. you can also use "r" for just read ( it is also the default option so if you want just read, don't need to 
+write anything. "a" Append, add something to the end of a written document. "x" Create, if the file doesnt exist, returns error if file already exists.
+"+" open a file for updating (reading and writing) https://stackoverflow.com/questions/1466000/python-open-built-in-function-difference-between-modes-a-a-w-w-and-r
+
+f.read() or open("filename").read() this will read the file. you can also wrap these functions with print() to print the contents of the file
+f.readline()[line number], we can also read a specific line by using this function, lines start with 0
+
+f.close() this is how you close the file
+
+f.write() writes a line in the file, line by line.
+
+f.truncate() delete file contents, be careful with this.
+
+f.seek(0) rewinds the file to the specified byte
+
+len() returns lengths of the string
+
+from os.path import exists with exists() checks if the parameter exists, usually a variable 
+
+def function_name (parameters): this is the simplest function
+	functions
+
+REMEMBER THAT YOU CAN ALWAYS COMBINE EVERYTHING HERE
+
