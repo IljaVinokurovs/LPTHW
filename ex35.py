@@ -1,14 +1,13 @@
 from sys import exit
+import numbers
 
 def gold_room():
 	print("This room is full of gold. How much do you take?")
-	
-	choice = int(input("> "))
-	#the below means that the number should contain 1 or 0 in it, like 234056 would be ok
-	if "0" in choice or "1" in choice:
-	else:
+	try:
+		choice = int(input("> "))
+	except:
 		dead("Man, learn to type a number.")
-	
+	#the below means that the number should contain 1 or 0 in it, like 234056 would be ok
 	if choice < 50:
 		print("Nice, you'r not greedy, you win!")
 		exit(0)
